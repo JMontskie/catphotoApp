@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -76,3 +76,4 @@
       @ 2021 <a href="https://freeCodeCamp.org" target="_blank">JMonton@freecodecamp.com</a>
     </footer>
   </body>
+</html>
