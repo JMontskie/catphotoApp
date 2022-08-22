@@ -73,6 +73,6 @@
       </div>
     </div>
     <footer>
-      @ 2021 <a href="https://freeCodeCamp.org" target="_blank">freeCodeCamp.org</a>
+      @ 2021 <a href="https://freeCodeCamp.org" target="_blank">JMonton@freecodecamp.com</a>
     </footer>
   </body>
