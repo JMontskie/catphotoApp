@@ -6,7 +6,7 @@
     <style>
      body{
       font-family: "Roboto Mono", monospace;
-      color: #0a0a23;
+      color: #ffffff;
       font-size: 18px;
       padding: 1em;
       line-height: 1.4;
@@ -14,6 +14,9 @@
       margin-top: 5vw;
       text-align: center;
       list-style-position: inside;
+     }
+     p,label,input {
+      font-
      }
     </style>
 
