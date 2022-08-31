@@ -24,7 +24,7 @@
 
       body {
         font-family: "Roboto Mono", monospace;
-        color: #0a0a23;
+        color: #ffffff;
         font-size: 18px;
         padding: 1em;
         line-height: 1.4;
