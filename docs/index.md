@@ -1,10 +1,27 @@
-<!DOCTYPE html>
+
 
 <html lang="en">
   <head>
     <title>CatPhotoApp</title>
+    <style>
+     body{
+      font-family: "Roboto Mono", monospace;
+      color: #ffffff;
+      font-size: 18px;
+      padding: 1em;
+      line-height: 1.4;
+      text-align: center;
+      margin-top: 5vw;
+      text-align: center;
+      list-style-position: inside;
+     }
+     p,label,input {
+      font-
+     }
+    </style>
+
   </head>
-  <body>
+  <body class="body">
     <h1>CatPhotoApp</h1>
     <main>
       <section>
@@ -38,7 +55,7 @@
       </section>
       <section>
         <h2>Cat Form</h2>
-        <form action="https://jmontskie.github.io/catphotoApp/ty_page.md/" target="_blank">
+        <form action="ty_page.html" target="_blank">
           <fieldset>
             <legend>Is your cat an indoor or outdoor cat?</legend>
             <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
