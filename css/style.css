@@ -11,9 +11,19 @@ body {
 }
 header {
     height: 100vh;
-    background-color: #FDEEDC;
+    background-color: #FDEEDC; /*PRIMARY COLOR*/
+    background-image: url("../images/dog-photo-withApp4.png");
+    background-position: bottom right;
+    background-size: cover;
+    /* color: #fff; */
 
 }
+
+.header__img {
+    display: none;
+}
+
+
 
 /* .abtHome {
     background-color: #FDEEDC;
