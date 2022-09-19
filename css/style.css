@@ -18,6 +18,23 @@ header {
     /* color: #fff; */
 }
 
+.container-fluid {
+    font-size: 1.5rem;
+}
+
+.navbar-brand {
+    font-size:2rem;
+    padding: 0.5% 10% 0;
+    text-transform: uppercase;
+}
+.navbar-nav {
+    padding: 5% 8%;
+}
+
+.navColor {
+    /* background-color: #FDEEDC; */
+}
+
 .header__img {
     display: none;
 }
