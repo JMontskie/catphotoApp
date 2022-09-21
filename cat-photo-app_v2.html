@@ -54,25 +54,61 @@
             <img src="images/dog-photo-withApp5-small.png" alt="this is Mihawk">
         </div>
     </header>
-    <!-- <div class="container-fluid abtHome"> 
-       
-        <main>
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 align-self-center text-center">
-                        <h1>"True friendship is the love of your furry bestfriend"</h1>
-                        <p>Be a foster parent, adopt at <a href="https://paws.org.ph/" target="_blank">PAWS PH</a></p>
-                    </div>
-                    <div class="col-lg-6 align-self-center">
-                        <img class="align-self-end" src="images/dog-photo-withApp5-small.png" alt="Mihawk">
-                    </div>
+    <main>
+        <section>
+        <!-- <h2>Cat Lists</h2> -->
+        <div class="container-fluid">
+            <h2>CAT GALLERY</h2>
+            <div class="row">
+                <div class="col-lg-6 gallery ">
+                    <img class="" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                </div>
+                <div class="col-lg-6 gallery">
+                    <img class="" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
                 </div>
             </div>
-        </main>
-        <footer> 
-        </footer>
-    </div> -->
-    <!-- JavaScript Bundle with Popper -->
+        </div>
+        
+        <h3>Things cats love:</h3>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+        </ul>
+        <figure>
+            
+            <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+        </ol>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+        </section>
+        <section>
+        <h2>Cat Form</h2>
+        <form action="ty_page.html" target="_blank">
+            <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+            </fieldset>
+            <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+            </fieldset>
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

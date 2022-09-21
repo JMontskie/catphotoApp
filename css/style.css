@@ -32,7 +32,7 @@ header {
 
 .navbar-nav {
     padding: 5% 8%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .navColor {
@@ -49,6 +49,71 @@ header {
 
 .header__img {
     display: none;
+}
+
+
+
+
+h1, p {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        top: 80%;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        top: 75%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 80%;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        top: 75%;
+    }
+}
+
+
+/* Gallery Section */
+
+.gallery {
+    height 80vh;
+}
+
+.gallery img {
+    height: 15rem;
+    width: 15rem;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5 ease;
+}
+
+
+
+.inner:hover img {
+
 }
 
 /*Media Queries*/
@@ -81,15 +146,12 @@ header {
         z-index: 10;
     }
 
-    h1 {
-        z-index: 2;
-    }
-
     .header__img {
         position: absolute;
         top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: inline-block;
         width: 12rem;
         height: 12rem;
         padding: 2%;
@@ -103,15 +165,14 @@ header {
         border-radius: 50%;
         border: 5px solid black;
     }
-    @keyframes fadeUp {
-        0% {
-            opacity: 0;
-            top: 80%;
-        }
+    
+    h1 {
+        /* z-index: 2; */
+        font-size: 1.8rem;
+    }
 
-        50% {
-            opacity: ;
-        }
+    p {
+        font-size: .8rem;
     }
 }   
 
