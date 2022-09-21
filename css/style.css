@@ -9,7 +9,9 @@ body {
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700;  
 }
+
 header {
+    position: relative;
     height: 100vh;
     background-color: #FDEEDC; /*PRIMARY COLOR*/
     background-image: url("../images/dog-photo-withApp4.png");
@@ -27,6 +29,7 @@ header {
     padding: 0.5% 10% 0;
     text-transform: uppercase;
 }
+
 .navbar-nav {
     padding: 5% 8%;
 }
@@ -35,10 +38,37 @@ header {
     /* background-color: #FDEEDC; */
 }
 
+.header__heading {
+    position: relative;
+    top: 25%;
+    left: 5%;
+    width: 40%;
+    /* background-color: green; */
+}
+
 .header__img {
     display: none;
 }
 
+/*Media Queries*/
+
+/*Max-width: 600px*/
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-image: none;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    
+    .navbar-nav {
+        font-size: 1rem;
+
+    }
+}
 
 
 /* .abtHome {
