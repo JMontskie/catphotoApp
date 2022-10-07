@@ -1,191 +1,281 @@
+/*
+COLOR PALETTE: 
+https://colorhunt.co/palette/fdeedcffd8a9f1a661e38b29
+PRIMARY: FDEEDC
+SECONDARY: FFD8A9
+ACCENT1: F1A661
+ACCENT2: E38B29
+
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     text-align: center;
-    font-family: 'Montserrat', sans-serif; 
-    font-weight: 700;  
-}
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
 
-header {
+  ul li {
+    list-style-type: none;
+  }
+  
+  ol li {
+    list-style-type: none;
+  }
+
+  header {
     position: relative;
     height: 100vh;
-    background-color: #FDEEDC; /*PRIMARY COLOR*/
     background-image: url("../images/dog-photo-withApp4.png");
-    background-position: bottom right;
     background-size: cover;
+    background-position: bottom right;
+    background-color: #fdeedc; /*PRIMARY*/
     /* color: #fff; */
-}
-
-.container-fluid {
+  }
+  
+  .navColor{
+    background-color: #fdeedc !important;
+  }
+  
+  .container-fluid{
+    background-color: hsl(33, 89%, 93%);
     font-size: 1.5rem;
-}
-
-.navbar-brand {
+  }
+  
+  .navbar-brand{
     font-size:2rem;
     padding: 0.5% 10% 0;
     text-transform: uppercase;
-}
-
-.navbar-nav {
-    padding: 5% 8%;
-    /* overflow: hidden; */
-}
-
-.navColor {
-    /* background-color: #FDEEDC; */
-}
-
-.header__heading {
+  }
+  
+  .navbar-nav{
+    padding: 5% 8%; 
+    /* position:sticky; */
+  }
+  
+  .header__heading{
     position: relative;
     top: 25%;
-    left: 5%;
+    left:5%;
     width: 40%;
-    /* background-color: green; */
-}
-
-.header__img {
-    display: none;
-}
-
-
-
-
-h1, p {
+  
+  }
+  
+  h1,p{
     animation: fadeIn 2s ease-in;
-}
-
-@keyframes fadeUp {
-    0% {
-        opacity: 0;
-        top: 80%;
+  }
+  
+  @keyframes fadeIn{
+    0%{
+      opacity:0;
     }
-
-    50% {
-        opacity: 0.5;
+  
+    50%{
+      opacity: 0.5;
     }
-
-    100% {
-        opacity: 1;
-        top: 75%;
+  
+    100%{
+      opacity: 1;
     }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        top: 80%;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        opacity: 1;
-        top: 75%;
-    }
-}
-
-
-/* Gallery Section */
-
-.gallery {
-    height 80vh;
-}
-
-.gallery img {
+  }
+  
+  .header__img {
+    display: none;
+  }
+  
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  
+  /**SECTION ABOUT**/
+  
+  .about{
+    min-height: 65vh;
+    background-image: linear-gradient(to right, rgba(253, 238, 220, 0.271), rgba(241, 167, 97, 0.243)),
+    url("https://github.com/WD16-KodeGo-Batch/image-sources/blob/main/pexels-lumn-406014.jpg?raw=true");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top:5%;
+  }
+  
+  
+  /* .about__h2{
+    
+  } */
+  
+  .about__para{
+    margin-top: 1.3%;
+    width: 37%;
+    background-color:rgba(227,140,41, 0.661);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius:50px;
+    -webkit-border-top-left-radius: 50px;
+    -webkit-border-bottom-right-radius:50px;
+    -moz-border-top-left-radius: 50px;
+    -moz-border-bottom-right-radius:50px;
+    text-align: center;
+  
+  }
+  
+  
+  /**SECTION GALLERY**/
+  
+  .gallery{
+    height:100vh;
+    padding: 5%;
+  }
+  
+  .card{
+    /* background-color: orangeRed; */
+    width: 18rem;
+    height: 25rem; 
+    margin: 0 auto;
+    box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 6px 1px rgba(0,0,0,0.75);
+  }
+  
+  /* .gallery__img{
     height: 15rem;
     width: 15rem;
-}
-
-.inner {
+  } */
+  
+  
+  .inner{
     overflow: hidden;
-}
-
-.inner img {
-    transition: all 1.5 ease;
-}
-
-
-
-.inner:hover img {
-
-}
-
-/*Media Queries*/
-
-/*Max-width: 600px*/
-
-@media only screen and (max-width: 600px) {
-    header {
-        background-image: none;
-    }
-    
-    .navbar-brand {
+  }
+  
+  .inner img{
+    transition: all 1s ease;
+  }
+  
+  .inner:hover img{
+    transform: scale(1.1);
+    cursor:pointer;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .gallery__link::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: .3s;
+    background-color: #F1A661;
+  }
+  
+  .gallery__link:hover::after{
+    width: 5%;
+  }
+  
+  
+  
+  /**************************************MEDIA QUERRIES********************************/
+  /**FIRST BREAKPOINT MEDIA MAX-WIDTH: 600px**/
+  
+  /*HEADER SECTION*/
+  @media only screen and (max-width: 600px){
+     header{
+      background-image: none;
+     }
+  
+     .navbar-brand{
         font-size: 1.5rem;
         padding: 0;
-    }
+        
+     }
+  
+     .navbar-nav{
+      font-size: 1rem;
+     }
+  
+     .dropdown{
+      position: relative;
+      z-index: 2;
+     }
+  
     
-    .navbar-nav {
-        font-size: 1rem;
-    }
-
-    .header__heading {
-        position: absolute;
-        top: 22%;
-        left: 15%;
-        width: 70%;
-    }
-
-    .dropdown {
-        position: relative;
-        z-index: 10;
-    }
-
-    .header__img {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: inline-block;
-        width: 12rem;
-        height: 12rem;
-        padding: 2%;
-        margin: 0;
-        animation: fadeUp 1s ease-in;
-    }
-
-    .header__img img {
+      /**NOTE TO SELF: Issue with the dropdown link"
+      It was the declartion of the position sticky property.
+      */
+  
+  
+     .header__heading{
+      position:absolute;
+      width: 75%;
+      top:33%;
+      left: 15%;
+      padding: 2%;
+      /* background-color:green; */
+     }
+  
+  
+     .header__img{
+       position: absolute;
+       top: 75%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       display: inline-block;
+       width: 12rem;
+       height: 12rem;
+       padding: 2%;
+       margin: 0;
+       animation: fadeUp 1s ease-in;
+     }
+  
+     .header__img img{
         height: 100%;
         width: 100%;
         border-radius: 50%;
         border: 5px solid black;
-    }
-    
-    h1 {
-        /* z-index: 2; */
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: .8rem;
-    }
-}   
-
-
-/* .abtHome {
-    background-color: #FDEEDC;
-}
-
-.navbar-brand:nth-child(1) {
-    font-size: 30px;
-}
-
-.container {
-    padding-top: 5% 5%;
-    padding-bottom: 0;
-} */
+     }
+     
+     @keyframes fadeUp{
+       0%{
+        opacity:0;
+        top:80%;
+       }
+  
+       50%{
+        opacity: 0.5;
+       }
+  
+       100%{
+        opacity: 1;
+         top: 75%; 
+       }
+      
+     }
+  
+     h1{
+      z-index: 1;
+      font-size: 1.8rem;
+     }
+  
+     p{
+      font-size: .8rem;
+     }
+  
+  }
+  
+  
+  
